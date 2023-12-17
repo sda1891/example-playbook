@@ -1,0 +1,5 @@
+---
+  - name: Install Vector Role
+    hosts: all
+    roles:
+      - vector_role
