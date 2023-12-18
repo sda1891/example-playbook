@@ -1,5 +1,7 @@
 ---
-  - name: Install Vector Role
+  - name: Print os facts
     hosts: all
-    roles:
-      - vector_role
+    tasks:
+      - name: Print OS
+        debug:
+          msg: "{{ ansible_distribution }}"
